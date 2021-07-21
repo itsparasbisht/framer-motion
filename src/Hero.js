@@ -1,6 +1,7 @@
 import React from 'react'
 import './hero.css'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const imgVariant = {
     hidden: {
@@ -32,7 +33,7 @@ const sliderVariant = {
 
 const h1Variant = {
     hidden: {
-        y: '-20vw'
+        y: '-50vw'
     },
     visible: {
         y: 0,
@@ -49,7 +50,7 @@ const h3Variant = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 1,
+            delay: 3,
             duration: 2,
         }
     }
@@ -61,7 +62,7 @@ const heroMainVariant = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 1,
+            delay: 3,
             duration: 2,
         }
     }
@@ -75,11 +76,6 @@ const btnVariant = {
         transition: {
             delay: 9
         }
-    },
-    hover: {
-        backgroundColor: 'blue',
-        borderColor: 'blue',
-        cursor: 'pointer',
     }
 }
 
@@ -90,20 +86,26 @@ function Hero() {
                 variants={imgVariant}
                 initial="hidden"
                 animate="visible"
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1724px-Apple_logo_white.svg.png"
                 alt="apple logo"
+                exit={{opacity: 0, transition: {duration: 0.1,ease: 'easeInOut'}}}
             />
             <motion.div
                 variants={sliderVariant}
                 initial="hidden"
                 animate="visible"
                 className="hero__slider"
+                exit={{opacity: 0, transition: {duration: 1, ease: 'easeInOut'}}}
             >
-                <motion.h1 variants={h1Variant}>Introducing</motion.h1>
-                <motion.h3 variants={h3Variant}>iPhone 12 Pro and iPhone 12 Pro Max</motion.h3>
-                <motion.img variants={heroMainVariant} src="/images/img1.jpg" alt="" className="hero__mainImg" />
+                <motion.h1 variants={h1Variant} exit={{x: "-100vw",transition: {duration: 1,ease: 'easeInOut'}}}>Introducing, all new</motion.h1>
+                <motion.h3 variants={h3Variant} exit={{x: "-100vw",transition: {duration: 2,ease: 'easeInOut'}}}>iPhone 12 Pro and iPhone 12 Pro Max</motion.h3>
+                <motion.img variants={heroMainVariant} src="/images/img1.jpg" alt="" className="hero__mainImg" exit={{opacity: 0, transition: {duration: 1,ease: 'easeInOut'}}} />
             </motion.div>
-            <motion.button variants={btnVariant} initial="hidden" animate="visible" whileHover="hover">Go</motion.button>
+
+            <Link to='/details'>
+                <motion.button variants={btnVariant} initial="hidden" animate="visible" exit={{opacity: 0, transition: {duration: 1,ease: 'easeInOut'}}}>Go</motion.button>
+            </Link>
+
         </motion.div>
     )
 }

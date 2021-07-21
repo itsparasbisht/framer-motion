@@ -1,0 +1,59 @@
+.display {
+  width: 100%;
+  height: 100%;
+}
+.display > img {
+  width: 50%;
+  object-fit: cover;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+}
+.display > h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 25px;
+}
+.display button {
+  color: white;
+  z-index: 20;
+  font-size: 17px;
+  display: block;
+  margin: 10% auto;
+  border: none;
+  background-color: rgb(0, 0, 195);
+  border: 1px solid rgb(0, 0, 195);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.display button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+}
+.display__specs {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.display__specs > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.display__specs h3 {
+  color: rgb(144, 144, 144);
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
+  padding: 20px;
+  width: 300px;
+  font-weight: 500;
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+.details {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/990/911/802/digital-art-dark-lines-cyan-wallpaper-preview.jpg");
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.details > h1 {
+  font-size: 80px;
+  padding: 30px 6%;
+  color: rgb(255, 255, 255);
+}
+.details > h3 {
+  font-size: 30px;
+  padding-left: 6%;
+  margin-top: -30px;
+  color: rgb(112, 112, 112);
+}
+.details > p {
+  width: 600px;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 70px 6%;
+  color: rgb(255, 255, 255);
+}
+.details > img {
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  width: 250px;
+  transition: all 0.3s;
+  border: 1px solid rgb(15, 15, 15);
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px,
+    rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+}
+.details > img:hover {
+  transform: scale(0.95);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: rgba(255, 255, 255, 0.438) 0px 13px 27px -5px,
+    rgba(255, 255, 255, 0.472) 0px 8px 16px -8px;
+}
+.details button {
+  color: rgb(0, 0, 0);
+  z-index: 20;
+  font-size: 17px;
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.details button:hover {
+  cursor: pointer;
+  color: rgb(0, 17, 255);
+}
