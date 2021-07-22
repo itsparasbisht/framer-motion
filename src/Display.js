@@ -38,6 +38,12 @@ const imgVariant = {
         transition: {
             duration: 2
         }
+    },
+    exit: {
+        y: '100vw',
+        transition: {
+            duration: 2
+        }
     }
 }
 
@@ -49,6 +55,12 @@ const h1Variant = {
         y: 0,
         transition: {
             delay: 1,
+            duration: 2
+        }
+    },
+    exit: {
+        y: '-100vw',
+        transition: {
             duration: 2
         }
     }
@@ -64,6 +76,13 @@ const h3Variant = {
             delay: 4,
             duration: 2
         }
+    },
+    exit: {
+        y: '200vw',
+        transition: {
+            delay: 1,
+            duration: 2
+        }
     }
 }
 
@@ -73,7 +92,7 @@ function Display() {
             <motion.img variants={imgVariant} src="/images/img3.png" alt="" />
             <motion.h1 variants={h1Variant}>Less bezel, more screen.</motion.h1>
 
-            <Link to='/details'>
+            <Link to='/buy'>
                 <motion.button variants={btnVariant} initial="hidden" animate="visible" exit={{opacity: 0, transition: {duration: 1,ease: 'easeInOut'}}}>Go</motion.button>
             </Link>
 

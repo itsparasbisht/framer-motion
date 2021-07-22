@@ -14,7 +14,7 @@ const baseVariant = {
         }
     },
     exit: {
-        y: '-100vw',
+        y: '-200vw',
         transition: {
             duration: 2
         }

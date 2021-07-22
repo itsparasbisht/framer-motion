@@ -44,9 +44,33 @@
   border: 1px solid rgb(0, 0, 195);
   padding: 5px 10px;
   border-radius: 20px;
+  transition: all 0.3s;
 }
 .camera2 button:hover {
   cursor: pointer;
   background-color: transparent;
   border-color: rgb(255, 255, 255);
+}
+
+@media all and (max-width: 600px) {
+  .camera2 > h3 {
+    font-size: 27px;
+    font-weight: 500;
+    padding-left: 15px;
+  }
+  .camera2 > h3:nth-of-type(1) {
+    top: 30%;
+  }
+  .camera2 > h3:nth-of-type(2) {
+    top: 50%;
+  }
+  .camera2 > h3:nth-of-type(3) {
+    top: 70%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .camera2 button {
+    bottom: 5%;
+  }
 }

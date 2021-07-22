@@ -98,7 +98,7 @@ function Hero() {
                 exit={{opacity: 0, transition: {duration: 1, ease: 'easeInOut'}}}
             >
                 <motion.h1 variants={h1Variant} exit={{x: "-100vw",transition: {duration: 1,ease: 'easeInOut'}}}>Introducing, all new</motion.h1>
-                <motion.h3 variants={h3Variant} exit={{x: "-100vw",transition: {duration: 2,ease: 'easeInOut'}}}>iPhone 12 Pro and iPhone 12 Pro Max</motion.h3>
+                <motion.h3 variants={h3Variant} exit={{x: "-100vw",transition: {duration: 2,ease: 'easeInOut'}}}>iPhone 12 and iPhone 12 Pro Max</motion.h3>
                 <motion.img variants={heroMainVariant} src="/images/img1.jpg" alt="" className="hero__mainImg" exit={{opacity: 0, transition: {duration: 1,ease: 'easeInOut'}}} />
             </motion.div>
 

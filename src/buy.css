@@ -1,0 +1,162 @@
+.buy {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.buy > img {
+  width: 450px;
+}
+.buy > h1 {
+  color: white;
+  position: fixed;
+  top: 20%;
+  left: 37%;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  line-height: 70px;
+}
+.buy > h3 {
+  color: rgb(112, 112, 112);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  position: fixed;
+  top: 45%;
+  left: 37%;
+  font-weight: 400;
+}
+.buy > button {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 20px;
+  position: fixed;
+  top: 65%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.3s;
+}
+.buy__btn {
+  left: 37%;
+}
+.buy__store {
+  left: 46%;
+  background-color: transparent;
+  color: white;
+}
+.buy__btn:hover {
+  box-shadow: rgba(255, 255, 255, 0.445) 0px 5px 15px;
+}
+.buy__store:hover {
+  border: 2px solid rgb(14, 0, 207);
+  box-shadow: rgba(14, 0, 207, 0.445) 0px 5px 15px;
+}
+
+@media all and (max-width: 1000px) {
+  .buy > img {
+    width: 50%;
+    max-width: 420px;
+    display: block;
+    padding-top: 3%;
+    margin: 0px -2%;
+  }
+  .buy > h1 {
+    top: 23%;
+    left: 42%;
+    font-size: 60px;
+    line-height: 55px;
+  }
+  .buy > h3 {
+    font-size: 23px;
+    top: 43%;
+    left: 42%;
+  }
+  .buy > button {
+    top: 58%;
+    font-size: 19px;
+  }
+  .buy__btn {
+    left: 42%;
+  }
+  .buy__store {
+    left: 55%;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .buy > img {
+    width: 250px;
+    display: block;
+    margin: 0px -2%;
+  }
+  .buy > h1 {
+    top: 55%;
+    left: 6%;
+    font-size: 60px;
+    line-height: 55px;
+  }
+  .buy > h3 {
+    font-size: 21px;
+    top: 75%;
+    left: 6%;
+  }
+  .buy > button {
+    font-size: 19px;
+    top: 85%;
+  }
+  .buy__btn {
+    left: 6%;
+  }
+  .buy__store {
+    left: 22%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .buy > img {
+    width: 250px;
+    display: block;
+    margin: 0px -2%;
+  }
+  .buy > h1 {
+    top: 55%;
+    left: 6%;
+    font-size: 60px;
+    line-height: 55px;
+  }
+  .buy > h3 {
+    font-size: 21px;
+    top: 75%;
+    left: 6%;
+  }
+  .buy > button {
+    font-size: 19px;
+    top: 87%;
+  }
+  .buy__btn {
+    left: 6%;
+  }
+  .buy__store {
+    left: 30%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .buy > button {
+    font-size: 15px;
+    top: 92%;
+  }
+  .buy > h3 {
+    font-size: 21px;
+    top: 81%;
+    left: 6%;
+    padding-right: 10px;
+  }
+  .buy__btn {
+    left: 6%;
+  }
+  .buy__store {
+    border: 1px solid white !important;
+    left: 33%;
+  }
+}

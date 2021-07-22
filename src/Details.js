@@ -30,7 +30,8 @@ const baseVariant = {
     exit: {
         y: '-200vw',
         transition: {
-            duration: 3
+            delay: 0,
+            duration: 2.5
         }
     }
 }
@@ -42,7 +43,13 @@ const h1Variant = {
     visible: {
         y: 0,
         transition: {
-            duration: 1.5
+            duration: 1
+        }
+    },
+    exit: {
+        y: '-100vw',
+        transition: {
+            duration: 2
         }
     }
 }
@@ -55,6 +62,12 @@ const h3Variant = {
         x: 0,
         transition: {
             duration: 1
+        }
+    },
+    exit: {
+        x: '-100vw',
+        transition: {
+            duration: 2
         }
     }
 }
@@ -72,6 +85,7 @@ const chipVariant = {
     exit: {
         x: '200vw',
         transition: {
+            delay: 0,
             duration: 2
         }
     }
@@ -79,7 +93,7 @@ const chipVariant = {
 
 const paraVariant = {
     hidden: {
-        y: '100vw'
+        y: '200vw'
     },
     visible: {
         y: 0,
@@ -90,6 +104,7 @@ const paraVariant = {
     exit: {
         y: '-200vw',
         transition: {
+            delay: 0.5,
             duration: 2
         }
     }

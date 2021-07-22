@@ -28,6 +28,7 @@
   border: 1px solid rgb(0, 0, 195);
   padding: 5px 10px;
   border-radius: 20px;
+  transition: all 0.3s;
 }
 .display button:hover {
   cursor: pointer;
@@ -56,4 +57,62 @@
   width: 300px;
   font-weight: 500;
   text-align: center;
+}
+
+@media all and (max-width: 1100px) {
+  .display > img {
+    width: 50%;
+    left: 25%;
+  }
+  .display__specs h3 {
+    font-size: 23px;
+    padding: 20px;
+  }
+  .display > h1 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  .display__specs {
+    height: 280px;
+    bottom: 22%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .display__specs > div {
+    padding: 0px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .display > img {
+    width: 50%;
+    left: 25%;
+  }
+  .display > h1 {
+    font-size: 55px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .display__specs {
+    position: relative;
+    height: 280px;
+    bottom: 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .display__specs > div {
+    padding: 0px;
+  }
+  .display__specs h3 {
+    font-size: 19px;
+    padding: 20px;
+  }
+  .display button {
+    position: relative;
+    top: 43%;
+    left: 0%;
+  }
 }

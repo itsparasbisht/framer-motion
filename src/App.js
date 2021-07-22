@@ -7,6 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import Camera from './Camera';
 import Camera2 from './Camera2';
 import Display from './Display';
+import Buy from './Buy';
 
 function App() {
   const location = useLocation()
@@ -34,6 +35,10 @@ function App() {
 
           <Route exact path='/display'>
             <Display />
+          </Route>
+
+          <Route exact path='/buy'>
+            <Buy />
           </Route>
 
         </Switch>
